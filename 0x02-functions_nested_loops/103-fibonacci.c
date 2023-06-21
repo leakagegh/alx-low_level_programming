@@ -20,6 +20,6 @@ sum += k;
 j = k - j;
 ++i;
 }
-print("ld\n", sum);
+printf("ld\n", sum);
 return (0);
 }
