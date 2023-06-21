@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Prints the first 52 fibonacci numbers
+ * main - Prints the sum of Even fibonacci numbers
+ * less than 4000000
  * Return: Nothing
  */
 int main(void)
@@ -9,22 +10,16 @@ int main(void)
 {
 
 int i = 0;
-long j = 1, k = 2;
+long j = 1, k = 2, sum = k;
 
-while (i < 50)
-{
-if (i == 0)
-printf("%lo", j);
-else if (i == 1)
-printf(", %lo", k);
-else
+while (k + j < 4000000)
 {
 k += j;
+if (k % 2 == 0)
+sum += k;
 j = k - j;
-printf(", %lo", k);
-}
 ++i;
 }
-printf("\n");
+print("ld\n", sum);
 return (0);
 }
