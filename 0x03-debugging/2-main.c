@@ -11,22 +11,11 @@ int main(void)
 int a, b, c;
 int largest;
 
-a = 0;
-b = -0;
+a = 972;
+b = -98;
 c = 0;
 
-if (a >= b && a >= c)
-{
-largest = a;
-}
-else if (b >= a && b >= c)
-{
-largest = b;
-}
-else
-{
-largest = c;
-}
+largest = largest_number(a, b, c);
 
 
 printf("%d is the largest number\n", largest);
