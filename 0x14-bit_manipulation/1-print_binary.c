@@ -2,16 +2,16 @@
 
 /**
  * print_binary - Displays the binary similar to a decimal number
- * @n: The decimal number to be displayed in binary
+ * @num: The decimal number to be displayed in binary
  */
-void print_binary(unsigned long int n)
+void print_binary(unsigned long int num)
 {
 int i, count = 0;
 unsigned long int current;
 
 for (i = 63; i >= 0; i--)
 {
-current = n >> i;
+current = num >> i;
 
 if (current & 1)
 {
