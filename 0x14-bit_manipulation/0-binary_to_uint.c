@@ -5,20 +5,20 @@
  * @b: The input binary string
  * Return: The converted unsigned int value
  */
-unsigned int binary_to_uint(const char *b)
+unsigned int binary_to_uint(const char *binary)
 {
 int i;
-unsigned int dec_val = 0;
+unsigned int decimal_value = 0;
 
-if (!b)
+if (!binary)
 return (0);
 
-for (i = 0; b[i]; i++)
+for (i = 0; binary[i]; i++)
 {
-if (b[i] < '0' || b[i] > '1')
+if (binary[i] < '0' || binary[i] > '1')
 return (0);
-dec_val = 2 * dec_val + (b[i] - '0');
+decimal_value = 2 * decimal_value + (binary[i] - '0');
 }
 
-return (dec_val);
+return (decimal_value);
 }
