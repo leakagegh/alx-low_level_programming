@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * Read_textfile- This function reads a text file and prints its contents to display
+ * read_textfile- This function reads a text file and prints its contents to display
  * @filename: name of the text file to be read
  * @letters: number of letters to be read
  * Return: the number of letters printed
